@@ -1,8 +1,10 @@
 package main
 
 import (
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	"fmt"
 	"log"
+
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 func main() {
@@ -26,7 +28,7 @@ func main() {
 
 			msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
 			msg.ReplyToMessageID = update.Message.MessageID
-
+			res := fmt.Sprintf("you send: %v", msg.Text)
 			bot.Send(msg)
 		}
 	}

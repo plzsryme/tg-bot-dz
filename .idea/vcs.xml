@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/git@gitlab.ozon.dev:ankorovashkin/tg-bot.git" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/https:/github.com/plzsryme/tg-bot.git" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/masterclass1" vcs="Git" />
   </component>
